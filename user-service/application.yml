@@ -1,0 +1,11 @@
+spring:
+  # Database connection
+  datasource:
+    url: jdbc:mysql://localhost:3307/swastya
+    username: swastyadbuser
+    password: '{cipher}AQAIlSaZU13QHsyHov1M4MxTqaG31bb8w2HlqDrOXTAqPw9SQrk6zgF+tghUB2ZlxC1QfbSmGiEfjvuC/lmcP5LaymGLl6k7iu/36duGAwTFlu1kCty5b0kk/FnvOtQnf11YBZKc2whFr4GG4Vi2Qg7m0KHO/SgGF9vQaGMZCh81QRSAgQEEy1Cft/qg/GjnZGc2TNYcApXm3ZI2Gn+xwmgrQLH3z9RNinvevLYgJfK6eAvPRlyKDc3C945z2bOKcry6KyvE9s06gLxiu0INsEAq381jd/ercWqoNMdzZ6HtT/8WzGrx7VuYXevepAeseabbrCpD7oxu4vttdQDk1fV9cQzu2x769i3VeGKVvFJHcfczYJLq2UJNO4oPugdPejC3MLPKnNBXOKGFUKwKXPnW'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
