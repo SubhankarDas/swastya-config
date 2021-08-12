@@ -1,0 +1,17 @@
+spring:
+  # Gateway service setup
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        # User service route
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/users/**, /api/v2/users/**
+          filters:
+            - StripPrefix=1
